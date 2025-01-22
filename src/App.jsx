@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Loginform />
-      <Dashboard />
+      <Dashboards />
     </>
   );
 };
