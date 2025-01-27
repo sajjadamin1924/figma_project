@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 import {
   LineChart,
   Line,
@@ -41,9 +42,9 @@ const Dashboard = () => {
             />
           </div>
           <nav className="nav flex flex-column align-items-start">
-            <a
+            <Link
               className="nav-link d-flex align-items-center text-dark"
-              href="#dashboard"
+              to="/dashboard"
             >
               <img
                 src="Speedometer.png"
@@ -51,35 +52,35 @@ const Dashboard = () => {
                 className="me-2"
               />
               Dashboard
-            </a>
-            <a
+            </Link>
+            <Link
               className="nav-link d-flex align-items-center text-dark"
-              href="#schools"
+              to="/schools"
             >
               <img src="Vector (1).png" alt="Schools Icon" className="me-2" />
               Schools
-            </a>
-            <a
+            </Link>
+            <Link
               className="nav-link d-flex align-items-center text-dark"
-              href="#plans"
+              to="/plans"
             >
               <img src="Show.png" alt="Plans Icon" className="me-2" />
               Plans
-            </a>
-            <a
+            </Link>
+            <Link
               className="nav-link d-flex align-items-center text-dark"
-              href="#community"
+              to="/community"
             >
               <img src="Team.png" alt="Community Icon" className="me-2" />
               Community
-            </a>
-            <a
+            </Link>
+            <Link
               className="nav-link d-flex align-items-center text-dark"
-              href="#messages"
+              to="/messages"
             >
               <img src="meeting.png" alt="Messages Icon" className="me-2" />
               Messages
-            </a>
+            </Link>
           </nav>
         </div>
 

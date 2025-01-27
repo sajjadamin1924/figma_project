@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faSortDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Schools = () => {
   return (
@@ -17,9 +18,9 @@ const Schools = () => {
               />
             </div>
             <nav className="nav flex flex-column align-items-start">
-              <a
+              <Link
                 className="nav-link d-flex align-items-center text-dark"
-                href="#dashboard"
+                to="/dashboard"
               >
                 <img
                   src="Speedometer.png"
@@ -27,35 +28,35 @@ const Schools = () => {
                   className="me-2"
                 />
                 Dashboard
-              </a>
-              <a
+              </Link>
+              <Link
                 className="nav-link d-flex align-items-center text-dark"
-                href="#schools"
+                to="/schools"
               >
                 <img src="Vector (1).png" alt="Schools Icon" className="me-2" />
                 Schools
-              </a>
-              <a
+              </Link>
+              <Link
                 className="nav-link d-flex align-items-center text-dark"
-                href="#plans"
+                to="/plans"
               >
                 <img src="Show.png" alt="Plans Icon" className="me-2" />
                 Plans
-              </a>
-              <a
+              </Link>
+              <Link
                 className="nav-link d-flex align-items-center text-dark"
-                href="#community"
+                to="/community"
               >
                 <img src="Team.png" alt="Community Icon" className="me-2" />
                 Community
-              </a>
-              <a
+              </Link>
+              <Link
                 className="nav-link d-flex align-items-center text-dark"
-                href="#messages"
+                to="/messages"
               >
                 <img src="meeting.png" alt="Messages Icon" className="me-2" />
                 Messages
-              </a>
+              </Link>
             </nav>
           </div>
 
@@ -110,8 +111,291 @@ const Schools = () => {
                 </button>
               </div>
             </div>
-            <div>
-              
+            <div className="bg-light d-flex flex-column">
+              <div className="row row-cols-1 row-cols-md-3 g-4">
+                <div className="col">
+                  <div className="card w-100 position-relative">
+                    <div className="position-absolute top-0 end-0 p-2">
+                      <button className="btn btn-link">
+                        <i className="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                    <img
+                      src="Mask group.png"
+                      style={{ width: "90px", height: "90px" }}
+                      className="card-img-top rounded-circle mx-auto d-block mt-2"
+                      alt="Avatar"
+                    />
+                    <div className="card-body text-center">
+                      <p className="card-text">Abc School</p>
+                      <div className="d-flex justify-content-center">
+                        <button className="btn btn-link">
+                          <i className="bi bi-telephone"></i>
+                        </button>
+                        <button className="btn btn-link">
+                          <i className="bi bi-chat-dots"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col">
+                  <div className="card w-100 position-relative">
+                    <div className="position-absolute top-0 end-0 p-2">
+                      <button className="btn btn-link">
+                        <i className="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                    <img
+                      src="698271.png"
+                      style={{ width: "90px", height: "90px" }}
+                      className="card-img-top rounded-circle mx-auto d-block mt-2"
+                      alt="Avatar"
+                    />
+                    <div className="card-body text-center">
+                      <p className="card-text">Abc School</p>
+                      <div className="d-flex justify-content-center">
+                        <button className="btn btn-link">
+                          <i className="bi bi-telephone"></i>
+                        </button>
+                        <button className="btn btn-link">
+                          <i className="bi bi-chat-dots"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col">
+                  <div className="card w-100 position-relative">
+                    <div className="position-absolute top-0 end-0 p-2">
+                      <button className="btn btn-link">
+                        <i className="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                    <img
+                      src="image 5.png"
+                      style={{ width: "90px", height: "90px" }}
+                      className="card-img-top rounded-circle mx-auto d-block mt-2"
+                      alt="Avatar"
+                    />
+                    <div className="card-body text-center">
+                      <p className="card-text">ABC School</p>
+                      <div className="d-flex justify-content-center">
+                        <button className="btn btn-link">
+                          <i className="bi bi-telephone"></i>
+                        </button>
+                        <button className="btn btn-link">
+                          <i className="bi bi-chat-dots"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card w-100 position-relative">
+                    <div className="position-absolute top-0 end-0 p-2">
+                      <button className="btn btn-link">
+                        <i className="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                    <img
+                      src="Mask group.png"
+                      style={{ width: "90px", height: "90px" }}
+                      className="card-img-top rounded-circle mx-auto d-block mt-2"
+                      alt="Avatar"
+                    />
+                    <div className="card-body text-center">
+                      <p className="card-text">Abc School</p>
+                      <div className="d-flex justify-content-center">
+                        <button className="btn btn-link">
+                          <i className="bi bi-telephone"></i>
+                        </button>
+                        <button className="btn btn-link">
+                          <i className="bi bi-chat-dots"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card w-100 position-relative">
+                    <div className="position-absolute top-0 end-0 p-2">
+                      <button className="btn btn-link">
+                        <i className="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                    <img
+                      src="698271.png"
+                      style={{ width: "90px", height: "90px" }}
+                      className="card-img-top rounded-circle mx-auto d-block mt-2"
+                      alt="Avatar"
+                    />
+                    <div className="card-body text-center">
+                      <p className="card-text">Abc School</p>
+                      <div className="d-flex justify-content-center">
+                        <button className="btn btn-link">
+                          <i className="bi bi-telephone"></i>{" "}
+                        </button>
+                        <button className="btn btn-link">
+                          <i className="bi bi-chat-dots"></i>{" "}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card w-100 position-relative">
+                    <div className="position-absolute top-0 end-0 p-2">
+                      <button className="btn btn-link">
+                        <i className="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                    <img
+                      src="image 5.png"
+                      style={{ width: "90px", height: "90px" }}
+                      className="card-img-top rounded-circle mx-auto d-block mt-2"
+                      alt="Avatar"
+                    />
+                    <div className="card-body text-center">
+                      <p className="card-text">ABC School</p>
+                      <div className="d-flex justify-content-center">
+                        <button className="btn btn-link">
+                          <i className="bi bi-telephone"></i>{" "}
+                        </button>
+                        <button className="btn btn-link">
+                          <i className="bi bi-chat-dots"></i>{" "}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card w-100 position-relative">
+                    <div className="position-absolute top-0 end-0 p-2">
+                      <button className="btn btn-link">
+                        <i className="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                    <img
+                      src="Mask group.png"
+                      style={{ width: "90px", height: "90px" }}
+                      className="card-img-top rounded-circle mx-auto d-block mt-2"
+                      alt="Avatar"
+                    />
+                    <div className="card-body text-center">
+                      <p className="card-text">Abc School</p>
+                      <div className="d-flex justify-content-center">
+                        <button className="btn btn-link">
+                          <i className="bi bi-telephone"></i>{" "}
+                        </button>
+                        <button className="btn btn-link">
+                          <i className="bi bi-chat-dots"></i>{" "}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card w-100 position-relative">
+                    <div className="position-absolute top-0 end-0 p-2">
+                      <button className="btn btn-link">
+                        <i className="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                    <img
+                      src="698271.png"
+                      style={{ width: "90px", height: "90px" }}
+                      className="card-img-top rounded-circle mx-auto d-block mt-2"
+                      alt="Avatar"
+                    />
+                    <div className="card-body text-center">
+                      <p className="card-text">Abc School</p>
+                      <div className="d-flex justify-content-center">
+                        <button className="btn btn-link">
+                          <i className="bi bi-telephone"></i>{" "}
+                        </button>
+                        <button className="btn btn-link">
+                          <i className="bi bi-chat-dots"></i>{" "}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col">
+                  <div className="card w-100 position-relative">
+                    <div className="position-absolute top-0 end-0 p-2">
+                      <button className="btn btn-link">
+                        <i className="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                    <img
+                      src="image 5.png"
+                      style={{ width: "90px", height: "90px" }}
+                      className="card-img-top rounded-circle mx-auto d-block mt-2"
+                      alt="Avatar"
+                    />
+                    <div className="card-body text-center">
+                      <p className="card-text">ABC School</p>
+                      <div className="d-flex justify-content-center">
+                        <button className="btn btn-link">
+                          <i className="bi bi-telephone"></i>
+                        </button>
+                        <button className="btn btn-link">
+                          <i className="bi bi-chat-dots"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-5 d-flex justify-content-between align-items-center">
+              <p>Showing 1 to 5 from 100 data</p>
+              <nav aria-label="Page navigation example">
+                <ul className="pagination mb-0">
+                  <li className="page-item">
+                    <a
+                      className="page-link border-0 bg-transparent rounded-circle d-flex align-items-center justify-content-center p-3"
+                      href="#"
+                      aria-label="Previous"
+                    >
+                      <i className="fas fa-chevron-left"></i>
+                    </a>
+                  </li>
+
+                  <li className="page-item">
+                    <a
+                      className="page-link active rounded-pill px-3 py-2"
+                      href="#"
+                    >
+                      1
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link rounded-pill px-3 py-2" href="#">
+                      2
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link rounded-pill px-3 py-2" href="#">
+                      3
+                    </a>
+                  </li>
+
+                  <li className="page-item">
+                    <a
+                      className="page-link border-0 bg-transparent rounded-circle d-flex align-items-center justify-content-center p-3"
+                      href="#"
+                      aria-label="Next"
+                    >
+                      <i className="fas fa-chevron-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
 
