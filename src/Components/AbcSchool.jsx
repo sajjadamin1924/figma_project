@@ -1,12 +1,14 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
 const AbcSchool = () => {
   return (
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-3 bg-white border-end d-flex flex-column px-0">
+    <div className="d-flex ">
+     
+     <div className="col-md-3 bg-white border-end d-flex flex-column px-0">
           <div className="text-center py-3">
+            <h1>ISOAS</h1>
             <img
               src="Group 2186.png"
               alt="Logo"
@@ -14,7 +16,7 @@ const AbcSchool = () => {
               style={{ maxWidth: "100px" }}
             />
           </div>
-          <nav className="nav flex-column align-items-start">
+          <nav className="nav flex flex-column align-items-start">
             <Link
               className="nav-link d-flex align-items-center text-dark"
               to="/dashboard"
@@ -57,68 +59,80 @@ const AbcSchool = () => {
           </nav>
         </div>
 
-        <main className="col-md-9 ">
-          <div className="d-flex">
-            <div className="d-flex align-items-center justify-content-end gap-4">
-              <div className="position-relative">
-                <img
-                  src="notification.png"
-                  alt="Notification"
-                  style={{ width: "90px", height: "90px" }}
-                />
-              </div>
-              <img
-                src="setting.png"
-                alt="Settings"
-                style={{ width: "90px", height: "90px" }}
-              />
-              <div className="d-flex flex-column align-items-start">
-                <span className="fw-bold">Nabila.</span>
-                <span className="text-muted">Admin</span>
-              </div>
-              <img
-                src="Placeholder.png"
-                alt="User Avatar"
-                className="rounded-circle"
-                style={{
-                  width: "50px",
-                  height: "50px",
-                  backgroundColor: "#D6CFF7",
-                }}
-              />
-            </div>
+     
+      <div className="flex-grow-1 p-4">
+        {/* Profile Card */}
+        <div className="card mb-4">
+          <div className="card-body d-flex align-items-center">
+            <div className="profile-picture rounded-circle bg-light me-3" style={{ width: "80px", height: "80px" }}></div>
             <div>
-              <img src="cover.png" alt="" />
+              <h5>Abc School</h5>
+              <p className="mb-1 text-muted">Jakarta, Indonesia</p>
+              <p className="mb-0">
+                <span className="me-3"><i className="bi bi-telephone"></i> +12 345 6789 0</span>
+                <span><i className="bi bi-envelope"></i> jordan@mail.com</span>
+              </p>
             </div>
           </div>
+        </div>
 
-          <div>
-            <nav>
-              <ul
-                className="d-flex"
-                style={{
-                  listStyle: "none",
-                  alignItems: "start",
-                }}
-              >
-                <li>Classes</li>
-                <li>Students</li>
-                <li>Teachers</li>
-                <li>Parents</li>
-                <li>Events</li>
-              </ul>
-            </nav>
+        {/* Overview Section */}
+        <div className="row mb-4">
+          <div className="col-md-3">
+            <div className="card text-center">
+              <div className="card-body">
+                <h6>Total Classes</h6>
+                <h4 className="text-primary">45</h4>
+              </div>
+            </div>
           </div>
+          <div className="col-md-3">
+            <div className="card text-center">
+              <div className="card-body">
+                <h6>Total Teachers</h6>
+                <h4 className="text-success">85</h4>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3">
+            <div className="card text-center">
+              <div className="card-body">
+                <h6>Total Students</h6>
+                <h4 className="text-info">5</h4>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div className="table-responsive small">
-            <table className="table  ">
+       
+        <div className="card">
+          <div className="card-body">
+            <ul className="nav nav-tabs">
+              <li className="nav-item">
+                <a href="#" className="nav-link active">Classes</a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">Students</a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">Teachers</a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">Parents</a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link">Events</a>
+              </li>
+            </ul>
+
+            <table className="table mt-3">
               <thead>
                 <tr>
-                  <th scope="col">Class Id</th>
-                  <th scope="col">Class Name</th>
-                  <th scope="col">Year</th>
-                  <th scope="col">Teacher(s)</th>
-                  <th scope="col">Students Enrolled</th>
+                  <th>Class ID</th>
+                  <th>Class Name</th>
+                  <th>Year</th>
+                  <th>Teacher(s)</th>
+                  <th>Students Enrolled</th>
                 </tr>
               </thead>
               <tbody>
@@ -143,59 +157,21 @@ const AbcSchool = () => {
                   <td>Text</td>
                   <td>28</td>
                 </tr>
-                <tr>
-                  <td>004</td>
-                  <td>Literature</td>
-                  <td>2023</td>
-                  <td>Text</td>
-                  <td>22</td>
-                </tr>
-                <tr>
-                  <td>005</td>
-                  <td>Art</td>
-                  <td>2023</td>
-                  <td>Text</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <td>006</td>
-                  <td>Physical Education</td>
-                  <td>2023</td>
-                  <td>Text</td>
-                  <td>35</td>
-                </tr>
-                <tr>
-                  <td>007</td>
-                  <td>Computer Science</td>
-                  <td>2023</td>
-                  <td>Text</td>
-                  <td>18</td>
-                </tr>
-                <tr>
-                  <td>008</td>
-                  <td>Music</td>
-                  <td>2023</td>
-                  <td>Text</td>
-                  <td>15</td>
-                </tr>
-                <tr>
-                  <td>009</td>
-                  <td>Biology</td>
-                  <td>2023</td>
-                  <td>Text</td>
-                  <td>27</td>
-                </tr>
-                <tr>
-                  <td>010</td>
-                  <td>Chemistry</td>
-                  <td>2023</td>
-                  <td>Text</td>
-                  <td>29</td>
-                </tr>
               </tbody>
             </table>
+
+            <div className="d-flex justify-content-center align-items-center">
+              <button className="btn btn-primary ">Add New Class</button>
+              <nav>
+                <ul className="pagination mb-0">
+                  <li className="page-item"><a className="page-link" href="#">1</a></li>
+                  <li className="page-item"><a className="page-link" href="#">2</a></li>
+                  <li className="page-item"><a className="page-link" href="#">3</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
-        </main>
+        </div>
       </div>
     </div>
   );
