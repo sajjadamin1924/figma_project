@@ -2,12 +2,14 @@ import React from "react";
 import "./app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Loginform from "./Components/Loginform";
-import Dashboard from "./Components/Dashboard";
+// import Dashboard from "./Components/Dashboard";
+import Schools from "./Components/Schools";
 const App = () => {
   return (
     <>
       <Loginform />
-      <Dashboards />
+      {/* <Dashboard /> */}
+      <Schools />
     </>
   );
 };
