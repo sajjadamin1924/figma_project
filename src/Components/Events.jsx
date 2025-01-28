@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Teachers = () => {
+const Events = () => {
   return (
     <div className="d-flex">
       <div className="col-md-3 bg-white border-end d-flex flex-column px-0">
@@ -185,17 +185,17 @@ const Teachers = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link active">
+              <a href="#" className="nav-link ">
                 Teachers
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="#" className="nav-link ">
                 Parents
               </a>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <a href="#" className="nav-link active">
                 Events
               </a>
             </li>
@@ -241,7 +241,7 @@ const Teachers = () => {
                   className="btn-2"
                 >
                   <FontAwesomeIcon icon={faPlus} />
-                  New Teacher
+                  New Event
                 </button>
               </div>
             </div>
@@ -427,4 +427,4 @@ const Teachers = () => {
   );
 };
 
-export default Teachers;
+export default Events;

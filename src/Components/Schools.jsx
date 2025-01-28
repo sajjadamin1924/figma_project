@@ -9,13 +9,14 @@ const Schools = () => {
       <div className="container-fluid vh-100">
         <div className="row h-100">
           <div className="col-md-3 bg-white border-end d-flex flex-column px-0">
-            <div className="text-center py-3">
+            <div className="text-center py-3 p-5 d-flex">
               <img
                 src="Group 2186.png"
                 alt="Logo"
                 className="img-fluid"
                 style={{ maxWidth: "100px" }}
               />
+              <h1 className="text-center p-3">ISOAS</h1>
             </div>
             <nav className="nav flex flex-column align-items-start">
               <Link
@@ -111,7 +112,7 @@ const Schools = () => {
                 </button>
               </div>
             </div>
-            <div className="bg-light d-flex flex-column">
+            <div className="bg-light d-flex flex-column pt-5">
               <div className="row row-cols-1 row-cols-md-3 g-4">
                 <div className="col">
                   <div className="card w-100 position-relative">
@@ -128,12 +129,26 @@ const Schools = () => {
                     />
                     <div className="card-body text-center">
                       <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center">
-                        <button className="btn btn-link">
+                      <div className="d-flex justify-content-center gap-3">
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
                           <i className="bi bi-telephone"></i>
                         </button>
-                        <button className="btn btn-link">
-                          <i className="bi bi-chat-dots"></i>
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-envelope"></i>
                         </button>
                       </div>
                     </div>
@@ -155,12 +170,26 @@ const Schools = () => {
                     />
                     <div className="card-body text-center">
                       <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center">
-                        <button className="btn btn-link">
+                      <div className="d-flex justify-content-center gap-3">
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
                           <i className="bi bi-telephone"></i>
                         </button>
-                        <button className="btn btn-link">
-                          <i className="bi bi-chat-dots"></i>
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-envelope"></i>
                         </button>
                       </div>
                     </div>
@@ -182,12 +211,26 @@ const Schools = () => {
                     />
                     <div className="card-body text-center">
                       <p className="card-text">ABC School</p>
-                      <div className="d-flex justify-content-center">
-                        <button className="btn btn-link">
+                      <div className="d-flex justify-content-center gap-3">
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
                           <i className="bi bi-telephone"></i>
                         </button>
-                        <button className="btn btn-link">
-                          <i className="bi bi-chat-dots"></i>
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-envelope"></i>
                         </button>
                       </div>
                     </div>
@@ -208,12 +251,26 @@ const Schools = () => {
                     />
                     <div className="card-body text-center">
                       <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center">
-                        <button className="btn btn-link">
+                      <div className="d-flex justify-content-center gap-3">
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
                           <i className="bi bi-telephone"></i>
                         </button>
-                        <button className="btn btn-link">
-                          <i className="bi bi-chat-dots"></i>
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-envelope"></i>
                         </button>
                       </div>
                     </div>
@@ -234,12 +291,26 @@ const Schools = () => {
                     />
                     <div className="card-body text-center">
                       <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center">
-                        <button className="btn btn-link">
-                          <i className="bi bi-telephone"></i>{" "}
+                      <div className="d-flex justify-content-center gap-3">
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-telephone"></i>
                         </button>
-                        <button className="btn btn-link">
-                          <i className="bi bi-chat-dots"></i>{" "}
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-envelope"></i>
                         </button>
                       </div>
                     </div>
@@ -260,12 +331,26 @@ const Schools = () => {
                     />
                     <div className="card-body text-center">
                       <p className="card-text">ABC School</p>
-                      <div className="d-flex justify-content-center">
-                        <button className="btn btn-link">
-                          <i className="bi bi-telephone"></i>{" "}
+                      <div className="d-flex justify-content-center gap-3">
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-telephone"></i>
                         </button>
-                        <button className="btn btn-link">
-                          <i className="bi bi-chat-dots"></i>{" "}
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-envelope"></i>
                         </button>
                       </div>
                     </div>
@@ -286,12 +371,26 @@ const Schools = () => {
                     />
                     <div className="card-body text-center">
                       <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center">
-                        <button className="btn btn-link">
-                          <i className="bi bi-telephone"></i>{" "}
+                      <div className="d-flex justify-content-center gap-3">
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-telephone"></i>
                         </button>
-                        <button className="btn btn-link">
-                          <i className="bi bi-chat-dots"></i>{" "}
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-envelope"></i>
                         </button>
                       </div>
                     </div>
@@ -312,12 +411,26 @@ const Schools = () => {
                     />
                     <div className="card-body text-center">
                       <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center">
-                        <button className="btn btn-link">
-                          <i className="bi bi-telephone"></i>{" "}
+                      <div className="d-flex justify-content-center gap-3">
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-telephone"></i>
                         </button>
-                        <button className="btn btn-link">
-                          <i className="bi bi-chat-dots"></i>{" "}
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-envelope"></i>
                         </button>
                       </div>
                     </div>
@@ -339,12 +452,26 @@ const Schools = () => {
                     />
                     <div className="card-body text-center">
                       <p className="card-text">ABC School</p>
-                      <div className="d-flex justify-content-center">
-                        <button className="btn btn-link">
+                      <div className="d-flex justify-content-center gap-3">
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
                           <i className="bi bi-telephone"></i>
                         </button>
-                        <button className="btn btn-link">
-                          <i className="bi bi-chat-dots"></i>
+                        <button
+                          className="btn btn-link p-2"
+                          style={{
+                            backgroundColor: "blue",
+                            color: "white",
+                            borderRadius: "50%",
+                          }}
+                        >
+                          <i className="bi bi-envelope"></i>
                         </button>
                       </div>
                     </div>
@@ -400,7 +527,7 @@ const Schools = () => {
           </div>
 
           <div className="col-md-3 rounded">
-            <div className="d-flex align-items-center justify-content-center gap-4">
+            <div className="d-flex align-items-center justify-content-end gap-2">
               <div className="position-relative ">
                 <img
                   src="notification.png"
