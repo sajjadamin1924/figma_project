@@ -98,3 +98,26 @@
   background-color: #0014CB;
   color: #fff;
 }
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  top: 50px;
+  left: 88.86px;
+  gap: 0px;
+  border-radius: 200px 0px 0px 0px;
+  border: 6px solid white;
+  background-color: #C1BBEB;
+}
+
+a.nav-link {
+  color: #000;
+}
+
+.add {
+  background-color: #0014CB;
+  color: #fff;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+}

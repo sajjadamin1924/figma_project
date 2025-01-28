@@ -33,13 +33,14 @@ const Dashboard = () => {
     <div className="container-fluid vh-100">
       <div className="row h-100">
         <div className="col-md-3 bg-white border-end d-flex flex-column px-0">
-          <div className="text-center py-3">
+          <div className="text-center py-3 p-5 d-flex">
             <img
               src="Group 2186.png"
               alt="Logo"
               className="img-fluid"
               style={{ maxWidth: "100px" }}
             />
+            <h1 className="text-center p-3">ISOAS</h1>
           </div>
           <nav className="nav flex flex-column align-items-start">
             <Link
@@ -149,7 +150,7 @@ const Dashboard = () => {
         </div>
 
         <div className="col-md-3 rounded">
-          <div className="d-flex align-items-center justify-content-center gap-4">
+          <div className="d-flex align-items-center justify-content-end gap-2">
             <div className="position-relative ">
               <img
                 src="notification.png"
