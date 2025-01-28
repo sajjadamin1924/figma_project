@@ -61,7 +61,7 @@ const AbcSchool = () => {
 
      
       <div className="flex-grow-1 p-4">
-        {/* Profile Card */}
+       
         <div className="card mb-4">
           <div className="card-body d-flex align-items-center">
             <div className="profile-picture rounded-circle bg-light me-3" style={{ width: "80px", height: "80px" }}></div>
@@ -76,7 +76,7 @@ const AbcSchool = () => {
           </div>
         </div>
 
-        {/* Overview Section */}
+       
         <div className="row mb-4">
           <div className="col-md-3">
             <div className="card text-center">
