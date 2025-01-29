@@ -41,10 +41,10 @@ const Students = () => {
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
-            to="/community"
+            to="/cummunity"
           >
-            <img src="Team.png" alt="Community Icon" className="me-2" />
-            Community
+            <img src="Team.png" alt="cummunity Icon" className="me-2" />
+            cummunity
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"

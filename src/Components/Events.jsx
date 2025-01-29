@@ -41,10 +41,10 @@ const Events = () => {
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
-            to="/community"
+            to="/cummunity"
           >
-            <img src="Team.png" alt="Community Icon" className="me-2" />
-            Community
+            <img src="Team.png" alt="cummunity Icon" className="me-2" />
+            Cummunity
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
@@ -246,11 +246,11 @@ const Events = () => {
               </div>
             </div>
             <div className="bg-light d-flex flex-column pt-5">
-  <div className="row g-4 row-cols-1 row-cols-md-4">
+              <div className="row g-4 row-cols-1 row-cols-md-4">
                 <div className="col">
                   <div className="card w-100 position-relative">
                     <div className="position-absolute top-0 end-0 p-2">
-                    <button className="btn btn-link">
+                      <button className="btn btn-link">
                         <i className="bi bi-three-dots"></i>
                       </button>
                     </div>
@@ -386,8 +386,8 @@ const Events = () => {
                       alt="Avatar"
                     />
                     <div className="card-body text-center">
-                    <h4 className="card-text">Soldavore Morebeau</h4>
-                    <p>Biology</p>
+                      <h4 className="card-text">Soldavore Morebeau</h4>
+                      <p>Biology</p>
                       <div className="d-flex justify-content-center gap-3">
                         <button
                           className="btn btn-link p-2"
@@ -413,13 +413,8 @@ const Events = () => {
                     </div>
                   </div>
                 </div>
-                
               </div>
             </div>
-
-            
-
-           
           </div>
         </div>
       </div>

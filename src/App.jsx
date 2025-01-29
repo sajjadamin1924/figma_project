@@ -10,6 +10,9 @@ import Students from "./Components/Students";
 import Teachers from "./Components/Teachers";
 import Parents from "./Components/Parents";
 import Events from "./Components/Events";
+import Plans from "./Components/Plans";
+import Cummunity from "./Components/Cummunity";
+import Messages from "./Components/Messages";
 
 const App = () => {
   return (
@@ -23,9 +26,9 @@ const App = () => {
         <Route path="/Teachers" element={<Teachers />} />
         <Route path="/Parents" element={<Parents />} />
         <Route path="/Events" element={<Events />} />
-
-        {/* <Route path="/community" element={<Community />} />
-        <Route path="/messages" element={<Messages />} /> */}
+        <Route path="/Plans" element={<Plans />} />
+        <Route path="/cummunity" element={<Cummunity />} />
+        <Route path="/messages" element={<Messages />} />
       </Routes>
     </Router>
   );

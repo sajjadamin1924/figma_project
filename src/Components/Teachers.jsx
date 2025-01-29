@@ -3,8 +3,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { Doughnut } from "react-chartjs-2";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Teachers = () => {
+  const doughnutData = {
+    datasets: [
+      {
+        data: [30, 70],
+        backgroundColor: ["#C5C6D0", "#0000FF"],
+        cutout: "70%",
+      },
+    ],
+  };
+
+  const doughnutOptions = {
+    responsive: false,
+    maintainAspectRatio: false,
+  };
   return (
     <div className="d-flex">
       <div className="col-md-3 bg-white border-end d-flex flex-column px-0">
@@ -41,10 +59,10 @@ const Teachers = () => {
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
-            to="/community"
+            to="/cummunity"
           >
-            <img src="Team.png" alt="Community Icon" className="me-2" />
-            Community
+            <img src="Team.png" alt="cummunity Icon" className="me-2" />
+            cummunity
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
@@ -139,34 +157,59 @@ const Teachers = () => {
         <div className="row mb-4">
           <h4>Overview</h4>
           <div className="col-md-3">
-            <div className="card ">
+            <div className="card position-relative">
               <div className="card-body">
                 <h6 className="text-muted">Total Classes</h6>
                 <h4>45</h4>
                 <p className="text-danger">
-                  <i className="bi bi-caret-down-fill"></i>100%
+                  <i className="bi bi-caret-up-fill"></i> 100%
                 </p>
               </div>
             </div>
+            <div
+              className="d-flex"
+              style={{
+                width: "50px",
+                height: "50px",
+              }}
+            >
+              <Doughnut
+                data={doughnutData}
+                options={doughnutOptions}
+                width={50}
+                height={50}
+              />
+            </div>
           </div>
+
           <div className="col-md-3">
             <div className="card ">
               <div className="card-body">
                 <h6 className="text-muted">Total Teachers</h6>
                 <h4>85</h4>
                 <p className="text-success">
-                  <i className="bi bi-caret-up-fill"></i>11%
+                  <i className="bi bi-caret-up-fill"></i>75%
                 </p>
               </div>
             </div>
           </div>
           <div className="col-md-3">
-            <div className="card ">
+            <div className="card">
               <div className="card-body">
                 <h6 className="text-muted">Total Students</h6>
                 <h4>5</h4>
+                <div className="d-flex justify-content-end">
+                  <div style={{ width: "50px", height: "50px" }}>
+                    <Doughnut
+                      data={doughnutData}
+                      options={doughnutOptions}
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                </div>
                 <p className="text-success">
-                  <i className="bi bi-caret-up-fill"></i>11%
+                  <i className="bi bi-caret-up-fill"></i> 11%
                 </p>
               </div>
             </div>
@@ -246,11 +289,11 @@ const Teachers = () => {
               </div>
             </div>
             <div className="bg-light d-flex flex-column pt-5">
-  <div className="row g-4 row-cols-1 row-cols-md-4">
+              <div className="row g-4 row-cols-1 row-cols-md-4">
                 <div className="col">
                   <div className="card w-100 position-relative">
                     <div className="position-absolute top-0 end-0 p-2">
-                    <button className="btn btn-link">
+                      <button className="btn btn-link">
                         <i className="bi bi-three-dots"></i>
                       </button>
                     </div>
@@ -386,8 +429,8 @@ const Teachers = () => {
                       alt="Avatar"
                     />
                     <div className="card-body text-center">
-                    <h4 className="card-text">Soldavore Morebeau</h4>
-                    <p>Biology</p>
+                      <h4 className="card-text">Soldavore Morebeau</h4>
+                      <p>Biology</p>
                       <div className="d-flex justify-content-center gap-3">
                         <button
                           className="btn btn-link p-2"
@@ -413,13 +456,8 @@ const Teachers = () => {
                     </div>
                   </div>
                 </div>
-                
               </div>
             </div>
-
-            
-
-           
           </div>
         </div>
       </div>

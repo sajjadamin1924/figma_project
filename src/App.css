@@ -121,3 +121,21 @@ a.nav-link {
   height: 40px;
   border-radius: 10px;
 }
+
+.back {
+  background: linear-gradient(#0014CB 20%, #0014 90%);
+  height: 300px;
+}
+
+.checkmark::before {
+  content: "✓";
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.backup {
+  background: #C1BBEB;
+  color: #0014ff;
+}
