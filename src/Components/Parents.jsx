@@ -175,29 +175,29 @@ const Parents = () => {
         <div>
           <ul className="nav nav-tabs">
             <li className="nav-item">
-              <a href="#" className="nav-link ">
+              <Link to="/classes" className="nav-link">
                 Classes
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link ">
+              <Link to="/students" className="nav-link">
                 Students
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link ">
+              <Link to="/teachers" className="nav-link">
                 Teachers
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link active">
+              <Link to="/parents" className="nav-link">
                 Parents
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link to="/events" className="nav-link">
                 Events
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

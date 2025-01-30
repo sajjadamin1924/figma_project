@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Loginform = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate("/dashboard");
+  };
   return (
     <div className="container-fluid vh-100">
       <div className="row h-100">
@@ -71,7 +78,11 @@ const Loginform = () => {
               />
             </div>
             <center>
-              <button type="submit" className="custom-button">
+              <button
+                type="submit"
+                className="custom-button"
+                onClick={handleSubmit}
+              >
                 <span className="icon">
                   <img src="Vector.png" alt="image" />
                 </span>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./app.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Loginform from "./Components/Loginform";
 import Dashboard from "./Components/Dashboard";
 import Schools from "./Components/Schools";
@@ -13,10 +13,11 @@ import Events from "./Components/Events";
 import Plans from "./Components/Plans";
 import Cummunity from "./Components/Cummunity";
 import Messages from "./Components/Messages";
+import Classes from "./Components/Classes";
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Loginform />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -29,8 +30,9 @@ const App = () => {
         <Route path="/Plans" element={<Plans />} />
         <Route path="/cummunity" element={<Cummunity />} />
         <Route path="/messages" element={<Messages />} />
+        <Route path="/classes" element={<Classes />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 
