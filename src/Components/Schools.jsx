@@ -2,8 +2,14 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Schools = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/Abcschool");
+  };
   return (
     <div>
       <div className="container-fluid vh-100">
@@ -106,6 +112,7 @@ const Schools = () => {
                 <button
                   style={{ width: "150px", height: "40px" }}
                   className="btn-2"
+                  onClick={handleClick}
                 >
                   <FontAwesomeIcon icon={faPlus} />
                   School

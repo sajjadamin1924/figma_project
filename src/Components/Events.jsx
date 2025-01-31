@@ -3,10 +3,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Container, Row, Col, Button, Dropdown } from "react-bootstrap";
 
 const Events = () => {
+  const [month, setMonth] = useState("January");
+  const [year, setYear] = useState(2021);
+
+  const daysInMonth = new Date(year, new Date().getMonth() + 1, 0).getDate();
+  const firstDay = new Date(year, new Date().getMonth(), 1).getDay();
+  const weeks = [];
+
+  let currentDay = 1;
+  for (let i = 0; i < 6; i++) {
+    let week = [];
+    for (let j = 0; j < 7; j++) {
+      if ((i === 0 && j < firstDay) || currentDay > daysInMonth) {
+        week.push(null);
+      } else {
+        week.push(currentDay);
+        currentDay++;
+      }
+    }
+    weeks.push(week);
+  }
   return (
-    <div className="d-flex">
+    <div className="d-flex bg-light">
       <div className="col-md-3 bg-white border-end d-flex flex-column px-0">
         <div className="text-center py-3 p-5 d-flex">
           <img
@@ -57,33 +79,36 @@ const Events = () => {
       </div>
 
       <div className="flex-grow-1 p-4">
-        <div className="d-flex align-items-center justify-content-end gap-2">
-          <div className="position-relative ">
+        <div className="d-flex justify-content-between align-items-center gap-2">
+          <h2 className="fw-bold">Schools/Events</h2>
+          <div className="d-flex align-items-center gap-2">
+            <div className="position-relative">
+              <img
+                src="notification.png"
+                alt="Notification"
+                style={{ width: "90px", height: "90px" }}
+              />
+            </div>
             <img
-              src="notification.png"
-              alt="Notification"
+              src="setting.png"
+              alt="Settings"
               style={{ width: "90px", height: "90px" }}
             />
+            <div className="d-flex flex-column align-items-start">
+              <span className="fw-bold">Nabila.</span>
+              <span className="text-muted">Admin</span>
+            </div>
+            <img
+              src="Placeholder.png"
+              alt="User Avatar"
+              className="rounded-circle"
+              style={{
+                width: "50px",
+                height: "50px",
+                backgroundColor: "#D6CFF7",
+              }}
+            />
           </div>
-          <img
-            src="setting.png"
-            alt="Settings"
-            style={{ width: "90px", height: "90px" }}
-          />
-          <div className="d-flex flex-column align-items-start">
-            <span className="fw-bold ">Nabila.</span>
-            <span className="text-muted">Admin</span>
-          </div>
-          <img
-            src="Placeholder.png"
-            alt="User Avatar"
-            className="rounded-circle "
-            style={{
-              width: "50px",
-              height: "50px",
-              backgroundColor: "#D6CFF7",
-            }}
-          />
         </div>
         <div className="card mb-4">
           <img className="img-fluid" src="cover.png" alt="cover" />
@@ -201,217 +226,126 @@ const Events = () => {
             </li>
           </ul>
         </div>
-
-        <div className="card">
-          <div className="card-body">
-            <div className="d-flex justify-content-between align-items-center">
-              <div className="input-group w-25 ">
-                <span className="input-group-text bg-white border-0">
-                  <img
-                    src="Search.png"
-                    alt="Search Icon"
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      borderRadius: "10px",
-                    }}
-                  />
-                </span>
-                <input
-                  type="text"
-                  className="form-control border-0 bg-light"
-                  placeholder="Search here..."
-                />
-              </div>
-
-              <div className="d-flex gap-3">
-                <button
-                  style={{
-                    width: "150px",
-                    height: "40px",
-                    border: "1px solid blue",
-                  }}
-                  className="btn-1"
-                >
-                  Newest
-                  <FontAwesomeIcon icon={faSortDown} />
-                </button>
-                <button
-                  style={{ width: "150px", height: "40px" }}
-                  className="btn-2"
-                >
-                  <FontAwesomeIcon icon={faPlus} />
-                  New Event
-                </button>
+        <div className="d-flex col-md-12" style={{ gap: "10px" }}>
+          <div className="col-md-9 ">
+            <Container className="calendar-container p-4 rounded shadow">
+              <Row className="mb-3 d-flex justify-content-between align-items-center">
+                <Col xs="auto">
+                  <h3 className="fw-bold">Calendar</h3>
+                </Col>
+                <Col xs="auto" className="d-flex">
+                  <Dropdown onSelect={(e) => setMonth(e)}>
+                    <Dropdown.Toggle variant="outline-primary">
+                      {month}
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      {["January", "February", "March", "April", "May"].map(
+                        (m) => (
+                          <Dropdown.Item eventKey={m} key={m}>
+                            {m}
+                          </Dropdown.Item>
+                        )
+                      )}
+                    </Dropdown.Menu>
+                  </Dropdown>
+                  <Dropdown onSelect={(e) => setYear(e)} className="ms-2">
+                    <Dropdown.Toggle variant="outline-primary">
+                      {year}
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      {[2021, 2022, 2023, 2024].map((y) => (
+                        <Dropdown.Item eventKey={y} key={y}>
+                          {y}
+                        </Dropdown.Item>
+                      ))}
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Col>
+                <Col xs="auto">
+                  <Button variant="primary" className="rounded-pill px-4">
+                    + New Event
+                  </Button>
+                </Col>
+              </Row>
+              <Row className="text-center fw-bold">
+                {[
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
+                ].map((day) => (
+                  <Col
+                    key={day}
+                    className="border py-2 text-uppercase small text-muted"
+                  >
+                    {day}
+                  </Col>
+                ))}
+              </Row>
+              {weeks.map((week, i) => (
+                <Row key={i} className="text-center">
+                  {week.map((day, j) => (
+                    <Col
+                      key={j}
+                      className={`border py-3 ${
+                        day ? "date-cell rounded position-relative" : "bg-light"
+                      }`}
+                    >
+                      {day && <span className="fw-bold">{day}</span>}
+                    </Col>
+                  ))}
+                </Row>
+              ))}
+            </Container>
+          </div>
+          <div className="col-md-3">
+            <div className="col">
+              <div className="card w-100 position-relative px-2">
+                <div className="card-body text-start">
+                  <h4 className="card-text">Schedule Details</h4>
+                  <p className="text-muted">Thursday, 10th april, 2021</p>
+                </div>
               </div>
             </div>
-            <div className="bg-light d-flex flex-column pt-5">
-              <div className="row g-4 row-cols-1 row-cols-md-4">
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="m1.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <h4 className="card-text">Dimiteres Viga</h4>
-                      <p>Mathematics</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+            <div className="col py-2">
+              <div className="card w-100 position-relative">
+                <div className="card-body text-start">
+                  <h4 className="card-text">Basic Algorithm</h4>
+                  <p className="text-muted">Algorithm</p>
+                  <p className="text-muted">March,20,2021</p>
+                  <p className="text-muted">09.00 - 10.00 AM</p>
                 </div>
-
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="m2.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <h4 className="card-text">Tom Housenburg</h4>
-                      <p>Science</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div className="col py-2">
+              <div className="card w-100 position-relative">
+                <div className="card-body text-start">
+                  <h4 className="card-text">Basic Art</h4>
+                  <p className="text-muted">Art</p>
+                  <p className="text-muted">March,20,2021</p>
+                  <p className="text-muted">09.00 - 10.00 AM</p>
                 </div>
-
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="m3.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <h4 className="card-text">Dana benevista</h4>
-                      <p>Art</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div className="col py-2">
+              <div className="card w-100 position-relative">
+                <div className="card-body text-start">
+                  <h4 className="card-text">HTML & CSS Class</h4>
+                  <p className="text-muted">Programming</p>
+                  <p className="text-muted">March,20,2021</p>
+                  <p className="text-muted">09.00 - 10.00 AM</p>
                 </div>
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="m4.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <h4 className="card-text">Soldavore Morebeau</h4>
-                      <p>Biology</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div className="col py-2">
+              <div className="card w-100 position-relative">
+                <div className="card-body text-start">
+                  <h4 className="card-text">Parents and Teachers Meeting</h4>
+                  <p className="text-muted">March,20,2021</p>
+                  <p className="text-muted">09.00 - 10.00 AM</p>
                 </div>
               </div>
             </div>

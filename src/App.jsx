@@ -14,6 +14,8 @@ import Plans from "./Components/Plans";
 import Cummunity from "./Components/Cummunity";
 import Messages from "./Components/Messages";
 import Classes from "./Components/Classes";
+import Addnewstudent from "./Components/Addnewstudent";
+import Addnewteacher from "./Components/Addnewteacher";
 
 const App = () => {
   return (
@@ -31,6 +33,8 @@ const App = () => {
         <Route path="/cummunity" element={<Cummunity />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/classes" element={<Classes />} />
+        <Route path="/addnewstudent" element={<Addnewstudent />} />
+        <Route path="/addnewteacher" element={<Addnewteacher />} />
       </Routes>
     </BrowserRouter>
   );

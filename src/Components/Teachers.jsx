@@ -5,10 +5,15 @@ import { faPlus, faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-
+import { useNavigate } from "react-router-dom";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Teachers = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/Addnewteacher");
+  };
   const doughnutData = {
     datasets: [
       {
@@ -75,33 +80,36 @@ const Teachers = () => {
       </div>
 
       <div className="flex-grow-1 p-4">
-        <div className="d-flex align-items-center justify-content-end gap-2">
-          <div className="position-relative ">
+        <div className="d-flex justify-content-between align-items-center gap-2">
+          <h2 className="fw-bold">Schools/Teachers</h2>
+          <div className="d-flex align-items-center gap-2">
+            <div className="position-relative">
+              <img
+                src="notification.png"
+                alt="Notification"
+                style={{ width: "90px", height: "90px" }}
+              />
+            </div>
             <img
-              src="notification.png"
-              alt="Notification"
+              src="setting.png"
+              alt="Settings"
               style={{ width: "90px", height: "90px" }}
             />
+            <div className="d-flex flex-column align-items-start">
+              <span className="fw-bold">Nabila.</span>
+              <span className="text-muted">Admin</span>
+            </div>
+            <img
+              src="Placeholder.png"
+              alt="User Avatar"
+              className="rounded-circle"
+              style={{
+                width: "50px",
+                height: "50px",
+                backgroundColor: "#D6CFF7",
+              }}
+            />
           </div>
-          <img
-            src="setting.png"
-            alt="Settings"
-            style={{ width: "90px", height: "90px" }}
-          />
-          <div className="d-flex flex-column align-items-start">
-            <span className="fw-bold ">Nabila.</span>
-            <span className="text-muted">Admin</span>
-          </div>
-          <img
-            src="Placeholder.png"
-            alt="User Avatar"
-            className="rounded-circle "
-            style={{
-              width: "50px",
-              height: "50px",
-              backgroundColor: "#D6CFF7",
-            }}
-          />
         </div>
         <div className="card mb-4">
           <img className="img-fluid" src="cover.png" alt="cover" />
@@ -282,6 +290,7 @@ const Teachers = () => {
                 <button
                   style={{ width: "150px", height: "40px" }}
                   className="btn-2"
+                  onClick={handleClick}
                 >
                   <FontAwesomeIcon icon={faPlus} />
                   New Teacher

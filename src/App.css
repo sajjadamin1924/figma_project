@@ -167,3 +167,47 @@ a.nav-link {
 
 
 }
+
+.calendar-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.date-cell {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+
+
+}
+
+.date-cell:hover {
+  background-color: #f0f0f0;
+}
+
+.rounded-pill {
+  border-radius: 50px;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.border {
+  border: 1px solid #dee2e6 !important;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
