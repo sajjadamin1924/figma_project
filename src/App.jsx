@@ -16,6 +16,7 @@ import Messages from "./Components/Messages";
 import Classes from "./Components/Classes";
 import Addnewstudent from "./Components/Addnewstudent";
 import Addnewteacher from "./Components/Addnewteacher";
+import StudentDetails from "./Components/Studentdetails";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/classes" element={<Classes />} />
         <Route path="/addnewstudent" element={<Addnewstudent />} />
         <Route path="/addnewteacher" element={<Addnewteacher />} />
+        <Route path="/studentdetails" element={<StudentDetails />} />
       </Routes>
     </BrowserRouter>
   );

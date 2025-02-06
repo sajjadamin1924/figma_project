@@ -173,20 +173,20 @@ const Teachers = () => {
                   <i className="bi bi-caret-up-fill"></i> 100%
                 </p>
               </div>
-            </div>
-            <div
-              className="d-flex"
-              style={{
-                width: "50px",
-                height: "50px",
-              }}
-            >
-              <Doughnut
-                data={doughnutData}
-                options={doughnutOptions}
-                width={50}
-                height={50}
-              />
+              <div
+                className="d-flex"
+                style={{
+                  width: "50px",
+                  height: "50px",
+                }}
+              >
+                <Doughnut
+                  data={doughnutData}
+                  options={doughnutOptions}
+                  width={50}
+                  height={50}
+                />
+              </div>
             </div>
           </div>
 
