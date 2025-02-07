@@ -10,48 +10,60 @@ const PricingPlans = () => {
       <div className="row">
         {/* Sidebar */}
         <nav className="  col-md-3 col-lg-2 d-md-block bg-light d-flex sidebar p-3">
-          <div className="text-center py-3 p-5">
+          <div className="d-flex text-center py-3 p-5">
             <img
-              src="Group 2186.png"
+              src="image 1.png"
               alt="Logo"
               className="img-fluid"
               style={{ maxWidth: "100px" }}
             />
-            <h4>ISOAS</h4>
+            <h1 className="text-center p-3">ISOAS</h1>
           </div>
 
-          <ul className="nav flex-column">
+          <ul className="nav flex-column mt-4">
             <li className="nav-item">
               <Link to="/Dashboard" className="nav-link">
                 <img
                   src="Speedometer.png"
                   alt="Dashboard Icon"
-                  className="me-2"
+                  className="me-2 image"
                 />
                 Dashboard
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/Schools" className="nav-link">
-                <img src="Vector (1).png" alt="Schools Icon" className="me-2" />
+                <img
+                  src="Vector (1).png"
+                  alt="Schools Icon"
+                  className="me-2 image"
+                />
                 Schools
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/Plans" className="nav-link active">
-                <img src="Show.png" alt="Plans Icon" className="me-2 active" />
+                <img src="Show.png" alt="Plans Icon" className="me-2 image" />
                 Plans
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/Cummunity" className="nav-link">
-                <img src="Team.png" alt="cummunity Icon" className="me-2" />
+                <img
+                  src="Team.png"
+                  alt="cummunity Icon"
+                  className="me-2 image"
+                />
                 Cummunity
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/Messages" className="nav-link">
-                <img src="meeting.png" alt="Messages Icon" className="me-2" />
+                <img
+                  src="meeting.png"
+                  alt="Messages Icon"
+                  className="me-2 image"
+                />
                 Messages
               </Link>
             </li>
@@ -81,12 +93,13 @@ const PricingPlans = () => {
             </div>
           </div>
 
-          <div className="row text-center">
+          <div className="row text-center px-4" style={{ marginTop: "-45px" }}>
             <div className="col-md-4">
               <div className="card shadow-sm p-3 mb-4">
                 <h5 className="card-title py-2 background text-white rounded">
                   Basic Plan
                 </h5>
+                <hr />
                 <h3 className="fs-4">
                   ${billingCycle === "monthly" ? 100 : 90}/month
                 </h3>
@@ -111,6 +124,7 @@ const PricingPlans = () => {
                 <h5 className="card-title py-2 background text-white rounded">
                   Pro Plan
                 </h5>
+                <hr />
                 <h3 className="fs-4">
                   ${billingCycle === "monthly" ? 100 : 90}/month
                 </h3>
@@ -136,6 +150,7 @@ const PricingPlans = () => {
                 <h5 className="card-title py-2 background text-white rounded">
                   Enterprise Plan
                 </h5>
+                <hr />
                 <h3 className="fs-4">
                   ${billingCycle === "monthly" ? 100 : 90}/month
                 </h3>

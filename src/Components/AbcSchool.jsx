@@ -20,35 +20,43 @@ const AbcSchool = () => {
             className="nav-link d-flex align-items-center text-dark"
             to="/dashboard"
           >
-            <img src="Speedometer.png" alt="Dashboard Icon" className="me-2" />
+            <img
+              src="Speedometer.png"
+              alt="Dashboard Icon"
+              className="me-2 image"
+            />
             Dashboard
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
             to="/schools"
           >
-            <img src="Vector (1).png" alt="Schools Icon" className="me-2" />
+            <img
+              src="Vector (1).png"
+              alt="Schools Icon"
+              className="me-2 image"
+            />
             Schools
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
             to="/plans"
           >
-            <img src="Show.png" alt="Plans Icon" className="me-2" />
+            <img src="Show.png" alt="Plans Icon" className="me-2 image" />
             Plans
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
             to="/cummunity"
           >
-            <img src="Team.png" alt="cummunity Icon" className="me-2" />
+            <img src="Team.png" alt="cummunity Icon" className="me-2 image" />
             cummunity
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
             to="/messages"
           >
-            <img src="meeting.png" alt="Messages Icon" className="me-2" />
+            <img src="meeting.png" alt="Messages Icon" className="me-2 image" />
             Messages
           </Link>
         </nav>
@@ -146,7 +154,7 @@ const AbcSchool = () => {
                   <h6 className="text-muted">Total Classes</h6>
                   <h4>45</h4>
                   <p className="text-danger">
-                    <i class="bi bi-caret-down-fill"></i>100%
+                    <i className="bi bi-caret-down-fill"></i>100%
                   </p>
                 </div>
               </div>
@@ -157,7 +165,7 @@ const AbcSchool = () => {
                   <h6 className="text-muted">Total Teachers</h6>
                   <h4>85</h4>
                   <p className="text-success">
-                    <i class="bi bi-caret-up-fill"></i>11%
+                    <i className="bi bi-caret-up-fill"></i>11%
                   </p>
                 </div>
               </div>
@@ -168,7 +176,7 @@ const AbcSchool = () => {
                   <h6 className="text-muted">Total Students</h6>
                   <h4>5</h4>
                   <p className="text-success">
-                    <i class="bi bi-caret-up-fill"></i>11%
+                    <i className="bi bi-caret-up-fill"></i>11%
                   </p>
                 </div>
               </div>

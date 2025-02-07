@@ -1,23 +1,16 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faSortDown } from "@fortawesome/free-solid-svg-icons";
+
 import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
 
 const Studentdetails = () => {
-  // const navigate = useNavigate();
-
-  // const handleClick = () => {
-  //   navigate("/Abcschool");
-  // };
   return (
-    <div>
+    <>
       <div className="container-fluid vh-100">
         <div className="row h-100">
           <div className="col-md-3 bg-white border-end d-flex flex-column px-0">
             <div className="text-center py-3 p-5 d-flex">
               <img
-                src="Group 2186.png"
+                src="image 1.png"
                 alt="Logo"
                 className="img-fluid"
                 style={{ maxWidth: "100px" }}
@@ -32,7 +25,7 @@ const Studentdetails = () => {
                 <img
                   src="Speedometer.png"
                   alt="Dashboard Icon"
-                  className="me-2"
+                  className="me-2 image"
                 />
                 Dashboard
               </Link>
@@ -40,38 +33,50 @@ const Studentdetails = () => {
                 className="nav-link d-flex align-items-center text-dark"
                 to="/schools"
               >
-                <img src="Vector (1).png" alt="Schools Icon" className="me-2" />
+                <img
+                  src="Vector (1).png"
+                  alt="Schools Icon"
+                  className="me-2 image"
+                />
                 Schools
               </Link>
               <Link
                 className="nav-link d-flex align-items-center text-dark"
                 to="/plans"
               >
-                <img src="Show.png" alt="Plans Icon" className="me-2" />
+                <img src="Show.png" alt="Plans Icon" className="me-2 image" />
                 Plans
               </Link>
               <Link
                 className="nav-link d-flex align-items-center text-dark"
                 to="/cummunity"
               >
-                <img src="Team.png" alt="cummunity Icon" className="me-2" />
+                <img
+                  src="Team.png"
+                  alt="cummunity Icon"
+                  className="me-2 image"
+                />
                 cummunity
               </Link>
               <Link
                 className="nav-link d-flex align-items-center text-dark"
                 to="/messages"
               >
-                <img src="meeting.png" alt="Messages Icon" className="me-2" />
+                <img
+                  src="meeting.png"
+                  alt="Messages Icon"
+                  className="me-2 image"
+                />
                 Messages
               </Link>
             </nav>
           </div>
 
-          <div className="col-md-6 bg-light d-flex flex-column ">
-            <div className="d-flex justify-content-between align-items-center p-3 w-100">
+          <div className="col-md-9 bg-light px-4 d-flex flex-column ">
+            <div className="d-flex justify-content-between align-items-center p-3">
               <h3>Studentdetails</h3>
               <div className="input-group w-25">
-                <span className="input-group-text bg-white border-0">
+                <span className="input-group-text bg-white border-0 rounded-start-4">
                   <img
                     src="Search.png"
                     alt="Search Icon"
@@ -80,582 +85,442 @@ const Studentdetails = () => {
                 </span>
                 <input
                   type="text"
-                  className="form-control border-0"
+                  className="form-control border-0 rounded-end-4 bg-white ps-2"
                   placeholder="Search here..."
                 />
               </div>
-            </div>
-            <div className="d-flex justify-content-between align-items-center"></div>
-            <div className="bg-light d-flex flex-column pt-5">
-              <div className="row row-cols-1 row-cols-md-3 g-4">
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="Mask group.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+              <div className="d-flex align-items-center justify-content-end gap-2">
+                <div className="position-relative ">
+                  <img
+                    src="notification.png"
+                    alt="Notification"
+                    style={{ width: "90px", height: "90px" }}
+                  />
                 </div>
-
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="698271.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="image 5.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <p className="card-text">ABC School</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="Mask group.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="698271.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="image 5.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <p className="card-text">ABC School</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="Mask group.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="698271.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <p className="card-text">Abc School</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col">
-                  <div className="card w-100 position-relative">
-                    <div className="position-absolute top-0 end-0 p-2">
-                      <button className="btn btn-link">
-                        <i className="bi bi-three-dots"></i>
-                      </button>
-                    </div>
-                    <img
-                      src="image 5.png"
-                      style={{ width: "90px", height: "90px" }}
-                      className="card-img-top rounded-circle mx-auto d-block mt-2"
-                      alt="Avatar"
-                    />
-                    <div className="card-body text-center">
-                      <p className="card-text">ABC School</p>
-                      <div className="d-flex justify-content-center gap-3">
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-telephone"></i>
-                        </button>
-                        <button
-                          className="btn btn-link p-2"
-                          style={{
-                            backgroundColor: "blue",
-                            color: "white",
-                            borderRadius: "50%",
-                          }}
-                        >
-                          <i className="bi bi-envelope"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-5 d-flex justify-content-between align-items-center">
-              <p>Showing 1 to 5 from 100 data</p>
-              <nav aria-label="Page navigation example">
-                <ul className="pagination mb-0">
-                  <li className="page-item">
-                    <a
-                      className="page-link border-0 bg-transparent rounded-circle d-flex align-items-center justify-content-center p-3"
-                      href="#"
-                      aria-label="Previous"
-                    >
-                      <i className="fas fa-chevron-left"></i>
-                    </a>
-                  </li>
-
-                  <li className="page-item">
-                    <a
-                      className="page-link active rounded-pill px-3 py-2"
-                      href="#"
-                    >
-                      1
-                    </a>
-                  </li>
-                  <li className="page-item">
-                    <a className="page-link rounded-pill px-3 py-2" href="#">
-                      2
-                    </a>
-                  </li>
-                  <li className="page-item">
-                    <a className="page-link rounded-pill px-3 py-2" href="#">
-                      3
-                    </a>
-                  </li>
-
-                  <li className="page-item">
-                    <a
-                      className="page-link border-0 bg-transparent rounded-circle d-flex align-items-center justify-content-center p-3"
-                      href="#"
-                      aria-label="Next"
-                    >
-                      <i className="fas fa-chevron-right"></i>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div className="col-md-3 rounded">
-            <div className="d-flex align-items-center justify-content-end gap-2">
-              <div className="position-relative ">
                 <img
-                  src="notification.png"
-                  alt="Notification"
+                  src="setting.png"
+                  alt="Settings"
                   style={{ width: "90px", height: "90px" }}
                 />
+                <div className="d-flex flex-column align-items-start">
+                  <span className="fw-bold ">Nabila.</span>
+                  <span className="text-muted">Admin</span>
+                </div>
+                <img
+                  src="Placeholder.png"
+                  alt="User Avatar"
+                  className="rounded-circle "
+                  style={{
+                    width: "50px",
+                    height: "50px",
+                    backgroundColor: "#D6CFF7",
+                  }}
+                />
               </div>
-              <img
-                src="setting.png"
-                alt="Settings"
-                style={{ width: "90px", height: "90px" }}
-              />
-              <div className="d-flex flex-column align-items-start">
-                <span className="fw-bold ">Nabila.</span>
-                <span className="text-muted">Admin</span>
-              </div>
-              <img
-                src="Placeholder.png"
-                alt="User Avatar"
-                className="rounded-circle "
-                style={{
-                  width: "50px",
-                  height: "50px",
-                  backgroundColor: "#D6CFF7",
-                }}
-              />
             </div>
+            <div className="d-flex">
+              <div className="col-md-9">
+                <div className="card mb-4">
+                  <img
+                    className="img-fluid w-100 mb-4"
+                    src="cover1.png"
+                    alt="cover"
+                    style={{ objectFit: "cover" }}
+                  />
+                  <div className="profile-picture rounded-circle position-absolute avatar">
+                    <img src="prof.png" alt="prof" />
+                  </div>
+                  <div class="px-4">
+                    <h4 className="mt-4 px-4">KarenHope</h4>
+                    <p className="mt-2 px-4">Student</p>
+                  </div>
 
-            <div className="bg-white p-4 rounded shadow-sm">
-              <h5 className="text-bold mb-4">Latest Activity</h5>
-              <ul className=" list-unstyled">
-                <li className="timeline-item mb-4">
-                  <div className="d-flex align-items-start">
-                    <div className="timeline-icon">
-                      <img src="Placeholder.png" alt="" />
-                    </div>
-                    <div>
-                      <p className="mb-1 px-3">
-                        <strong>Karen Hope</strong> moved task
-                        <span className="text-primary">
-                          "User Research"
-                        </span>{" "}
-                        from
-                        <span className="text-muted">On Progress</span> to Done
-                      </p>
-                      <small className="text-muted px-3">
-                        2 March 2021, 13:45 PM
-                      </small>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-item mb-4">
-                  <div className="d-flex align-items-start">
-                    <div className="timeline-icon">
-                      <img src="Placeholder.png" alt="" />
-                    </div>
-                    <div>
-                      <p className="mb-1 px-3">
-                        <strong>Samantha William</strong> added new 4 attached
-                        files on task
-                        <span className="text-warning">"Photo's Assets"</span>.
-                      </p>
-                      <small className="text-muted px-3">
-                        2 March 2021, 13:45 PM
-                      </small>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-item mb-4">
-                  <div className="d-flex align-items-start">
-                    <div className="timeline-icon">
-                      <img src="Placeholder.png" alt="" />
-                    </div>
-                    <div>
-                      <p className="mb-1 px-3">
-                        <strong>Tony Soop</strong> created new class{" "}
-                        <span className="span">"Wireframing"</span>.
-                      </p>
-                      <small className="text-muted px-3">
-                        2 March 2021, 13:45 PM
-                      </small>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-item mb-4">
-                  <div className="d-flex align-items-start">
-                    <div className="timeline-icon">
-                      <img src="Placeholder.png" alt="" />
-                    </div>
-                    <div>
-                      <p className="mb-1 px-3">
-                        <strong>Samantha William</strong> added a new student to
-                        class.
-                      </p>
-                      <small className="text-muted px-3">
-                        2 March 2021, 13:45 PM
-                      </small>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-item mb-4">
-                  <div className="d-flex align-items-start">
-                    <div className="timeline-icon">
-                      <img src="Placeholder.png" alt="" />
-                    </div>
-                    <div>
-                      <p className="mb-1 px-3">
-                        <strong>Samantha William</strong> added a new student to
-                        class.
-                      </p>
-                      <small className="text-muted px-3">
-                        2 March 2021, 13:45 PM
-                      </small>
+                  <div className="card-body d-flex align-items-center">
+                    <div className="d-flex w-100 align-items-center justify-content-between">
+                      <div className="px-4">
+                        <p className="text-muted px-0">Parents:</p>
+                        <p className="fw-bold d-flex align-items-center">
+                          <div
+                            className="rounded-circle d-flex justify-content-center align-items-center me-2"
+                            style={{
+                              width: "32px",
+                              height: "32px",
+                              backgroundColor: "#007bff",
+                              color: "white",
+                            }}
+                          >
+                            <i className="bi bi-person"></i>
+                          </div>
+                          Justin Hope
+                        </p>
+                      </div>
+
+                      <div className="px-4">
+                        <p className="text-muted px-0">Address:</p>
+                        <p className="fw-bold d-flex align-items-center">
+                          <div
+                            className="rounded-circle d-flex justify-content-center align-items-center me-2"
+                            style={{
+                              width: "32px",
+                              height: "32px",
+                              backgroundColor: "#007bff",
+                              color: "white",
+                            }}
+                          >
+                            <i className="bi bi-geo-alt-fill"></i>
+                          </div>
+                          Jakarta, Indonesia
+                        </p>
+                      </div>
+
+                      <div className="px-4">
+                        <p className="text-muted px-0">Phone:</p>
+                        <p className="fw-bold d-flex align-items-center">
+                          <div
+                            className="rounded-circle d-flex justify-content-center align-items-center me-2"
+                            style={{
+                              width: "32px",
+                              height: "32px",
+                              backgroundColor: "#007bff",
+                              color: "white",
+                            }}
+                          >
+                            <i className="bi bi-telephone"></i>
+                          </div>
+                          +12 345 6789 0
+                        </p>
+                      </div>
+
+                      <div className="px-4">
+                        <p className="text-muted px-0">Email:</p>
+                        <p className="fw-bold d-flex align-items-center">
+                          <div
+                            className="rounded-circle d-flex justify-content-center align-items-center me-2"
+                            style={{
+                              width: "32px",
+                              height: "32px",
+                              backgroundColor: "#007bff",
+                              color: "white",
+                            }}
+                          >
+                            <i className="bi bi-envelope"></i>
+                          </div>
+                          Hope@mail.com
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </li>
-                <li className="timeline-item mb-4">
-                  <div className="d-flex align-items-start">
-                    <div className="timeline-icon">
-                      <img src="Placeholder.png" alt="" />
-                    </div>
-                    <div>
-                      <p className="mb-1 px-3 ">
-                        <strong>Samantha William</strong> added a new student to
-                        class.
-                      </p>
-                      <small className="text-muted px-3">
-                        2 March 2021, 13:45 PM
-                      </small>
+                </div>
+                <div className="card p-4">
+                  <h4>Academics History</h4>
+                  <ul className="nav nav-tabs">
+                    <li className="nav-item">
+                      <Link className="nav-link active" to="#">
+                        Assignments
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        Quizzes
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        Exam Report
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        Files
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to="#">
+                        Attendance
+                      </Link>
+                    </li>
+                  </ul>
+                  <div className="row mt-3">
+                    {[...Array(4)].map((_, index) => (
+                      <div className="col-md-3" key={index}>
+                        <div className="card p-3 shadow-sm position-relative d-flex flex-column">
+                          <span className="badge fw-bold text-danger">
+                            Pending
+                          </span>
+                          <p>Till 09:30 PM</p>
+                          <h4>Complete the question</h4>
+                          <p>
+                            There are lots of times in life you may need to wear
+                            a tie. This is a skill that once mastered{" "}
+                          </p>
+                          <img
+                            src="card.png"
+                            alt=""
+                            className=""
+                            style={{ width: "50px" }}
+                          />
+
+                          <p>Mathematics</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-5 d-flex justify-content-between align-items-center">
+                  <p>Showing 1 to 5 from 100 data</p>
+                  <nav aria-label="Page navigation example">
+                    <ul className="pagination mb-0">
+                      <li className="page-item">
+                        <a
+                          className="page-link border-0 bg-transparent rounded-circle d-flex align-items-center justify-content-center p-3"
+                          href="#"
+                          aria-label="Previous"
+                        >
+                          <i className="fas fa-chevron-left"></i>
+                        </a>
+                      </li>
+
+                      <li className="page-item">
+                        <a
+                          className="page-link active rounded-pill px-3 py-2"
+                          href="#"
+                        >
+                          1
+                        </a>
+                      </li>
+                      <li className="page-item">
+                        <a
+                          className="page-link rounded-pill px-3 py-2"
+                          href="#"
+                        >
+                          2
+                        </a>
+                      </li>
+                      <li className="page-item">
+                        <a
+                          className="page-link rounded-pill px-3 py-2"
+                          href="#"
+                        >
+                          3
+                        </a>
+                      </li>
+
+                      <li className="page-item">
+                        <a
+                          className="page-link border-0 bg-transparent rounded-circle d-flex align-items-center justify-content-center p-3"
+                          href="#"
+                          aria-label="Next"
+                        >
+                          <i className="fas fa-chevron-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+
+              <div className="d-flex col-md-3 rounded">
+                <div className="bg-white rounded px-4  shadow-sm">
+                  <div class="card px-4 rounded-4 ">
+                    <h5 className="text-primary">Class joined</h5>
+                    <p className="text-muted" style={{ fontSize: "12px" }}>
+                      Thursday,10th april,2021
+                    </p>
+                  </div>
+                  <div
+                    className="card rounded-4 px-4 mt-4 d-flex flex-column position-relative overflow-hidden"
+                    style={{ background: "#4D44B5" }}
+                  >
+                    <h5 className="text-white">Mathematics</h5>
+                    <p className="text-white" style={{ fontSize: "12px" }}>
+                      Welcome to Physics! I'm looking forward to using ISOAS to
+                      share updates, notes, and more.
+                    </p>
+                    <div className="d-flex justify-content-end align-items-end position-absolute bottom-0 end-0">
+                      <img
+                        src="join.png"
+                        alt=""
+                        className="img-fluid"
+                        style={{
+                          width: "164px",
+                          height: "105px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
+                      <img
+                        src="student.png"
+                        alt="Profile"
+                        className="rounded-circle border justify-content-end align-items-end position-absolute"
+                        style={{
+                          width: "50px",
+                          height: "50px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
                     </div>
                   </div>
-                </li>
-                <li className="timeline-item mb-4">
-                  <div className="d-flex align-items-start">
-                    <div className="timeline-icon">
-                      <img src="Placeholder.png" alt="" />
-                    </div>
-                    <div>
-                      <p className="mb-1 px-3">
-                        <strong>Samantha William</strong> added a new student to
-                        class.
-                      </p>
-                      <small className="text-muted px-3">
-                        2 March 2021, 13:45 PM
-                      </small>
+
+                  <div
+                    className="card rounded-4  px-4 mt-4 d-flex flex-column position-relative"
+                    style={{
+                      background:
+                        "linear-gradient(to right, #5028c6 5%, #ffffff 5%)",
+                    }}
+                  >
+                    <h5 className="text-primary">Mathematics</h5>
+                    <p className="text-muted" style={{ fontSize: "12px" }}>
+                      Welcome to Physics! I'm looking forward to using ISOAS to
+                      share updates, notes, and more.
+                    </p>
+                    <div className="d-flex justify-content-end align-items-end position-absolute bottom-0 end-0">
+                      <img
+                        src="join.png"
+                        alt=""
+                        className="img-fluid"
+                        style={{
+                          width: "164px",
+                          height: "105px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
+                      <img
+                        src="student.png"
+                        alt="Profile"
+                        className="rounded-circle border justify-content-end align-items-end position-absolute"
+                        style={{
+                          width: "50px",
+                          height: "50px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
                     </div>
                   </div>
-                </li>
-              </ul>
+
+                  <div
+                    className="card rounded-4 px-4 mt-4 d-flex flex-column position-relative"
+                    style={{
+                      background:
+                        "linear-gradient(to right,#FB7D5B 5%, #ffffff 5%)",
+                    }}
+                  >
+                    <h5 className="text-primary">Arts</h5>
+                    <p className="text-muted" style={{ fontSize: "12px" }}>
+                      Welcome to Physics! I'm looking forward to using ISOAS to
+                      share updates, notes, and more.
+                    </p>
+                    <div className="d-flex justify-content-end align-items-end position-absolute bottom-0 end-0">
+                      <img
+                        src="join.png"
+                        alt=""
+                        className="img-fluid"
+                        style={{
+                          width: "164px",
+                          height: "105px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
+                      <img
+                        src="student.png"
+                        alt="Profile"
+                        className="rounded-circle border justify-content-end align-items-end position-absolute"
+                        style={{
+                          width: "50px",
+                          height: "50px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    className="card rounded-4  px-4 mt-4 d-flex flex-column position-relative"
+                    style={{
+                      background:
+                        "linear-gradient(to right, #FCC43E 5%, #ffffff 5%)",
+                    }}
+                  >
+                    <h5 className="text-primary">English</h5>
+                    <p className="text-muted" style={{ fontSize: "12px" }}>
+                      Welcome to Physics! I'm looking forward to using ISOAS to
+                      share updates, notes, and more.
+                    </p>
+                    <div className="d-flex justify-content-end align-items-end position-absolute bottom-0 end-0">
+                      <img
+                        src="join.png"
+                        alt=""
+                        className="img-fluid"
+                        style={{
+                          width: "164px",
+                          height: "105px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
+                      <img
+                        src="student.png"
+                        alt="Profile"
+                        className="rounded-circle border justify-content-end align-items-end position-absolute"
+                        style={{
+                          width: "50px",
+                          height: "50px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    className="card rounded-4  px-4 mt-4  d-flex flex-column position-relative"
+                    style={{
+                      background:
+                        "linear-gradient(to right,#303972 5%, #ffffff 5%)",
+                    }}
+                  >
+                    <h5 className="text-primary">Physics</h5>
+                    <p className="text-muted" style={{ fontSize: "12px" }}>
+                      Welcome to Physics! I'm looking forward to using ISOAS to
+                      share updates, notes, and more.
+                    </p>
+                    <div className="d-flex justify-content-end align-items-end position-absolute bottom-0 end-0">
+                      <img
+                        src="join.png"
+                        alt=""
+                        className="img-fluid"
+                        style={{
+                          width: "164px",
+                          height: "105px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
+                      <img
+                        src="student.png"
+                        alt="Profile"
+                        className="rounded-circle border justify-content-end align-items-end position-absolute"
+                        style={{
+                          width: "50px",
+                          height: "50px",
+                          objectFit: "cover",
+                          zIndex: "2",
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

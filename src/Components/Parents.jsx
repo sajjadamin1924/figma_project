@@ -22,35 +22,43 @@ const Parents = () => {
             className="nav-link d-flex align-items-center text-dark"
             to="/dashboard"
           >
-            <img src="Speedometer.png" alt="Dashboard Icon" className="me-2" />
+            <img
+              src="Speedometer.png"
+              alt="Dashboard Icon"
+              className="me-2 image"
+            />
             Dashboard
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
             to="/schools"
           >
-            <img src="Vector (1).png" alt="Schools Icon" className="me-2" />
+            <img
+              src="Vector (1).png"
+              alt="Schools Icon"
+              className="me-2 image"
+            />
             Schools
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
             to="/plans"
           >
-            <img src="Show.png" alt="Plans Icon" className="me-2" />
+            <img src="Show.png" alt="Plans Icon" className="me-2 image" />
             Plans
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
             to="/cummunity"
           >
-            <img src="Team.png" alt="cummunity Icon" className="me-2" />
+            <img src="Team.png" alt="cummunity Icon" className="me-2 image" />
             cummunity
           </Link>
           <Link
             className="nav-link d-flex align-items-center text-dark"
             to="/messages"
           >
-            <img src="meeting.png" alt="Messages Icon" className="me-2" />
+            <img src="meeting.png" alt="Messages Icon" className="me-2 image" />
             Messages
           </Link>
         </nav>
@@ -205,24 +213,20 @@ const Parents = () => {
           </ul>
         </div>
 
-        <div className="card">
+        <div className="card bg-light">
           <div className="card-body">
             <div className="d-flex justify-content-between align-items-center">
-              <div className="input-group w-25 ">
-                <span className="input-group-text bg-white border-0">
+              <div className="input-group w-25">
+                <span className="input-group-text bg-white border-0 rounded-start-4">
                   <img
                     src="Search.png"
                     alt="Search Icon"
-                    style={{
-                      width: "20px",
-                      height: "20px",
-                      borderRadius: "10px",
-                    }}
+                    style={{ width: "20px", height: "20px" }}
                   />
                 </span>
                 <input
                   type="text"
-                  className="form-control border-0 bg-light"
+                  className="form-control border-0 rounded-end-4 bg-white ps-2"
                   placeholder="Search here..."
                 />
               </div>

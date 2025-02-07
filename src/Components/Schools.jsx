@@ -32,7 +32,7 @@ const Schools = () => {
                 <img
                   src="Speedometer.png"
                   alt="Dashboard Icon"
-                  className="me-2"
+                  className="me-2 image"
                 />
                 Dashboard
               </Link>
@@ -40,28 +40,40 @@ const Schools = () => {
                 className="nav-link d-flex align-items-center text-dark"
                 to="/schools"
               >
-                <img src="Vector (1).png" alt="Schools Icon" className="me-2" />
+                <img
+                  src="Vector (1).png"
+                  alt="Schools Icon"
+                  className="me-2 image"
+                />
                 Schools
               </Link>
               <Link
                 className="nav-link d-flex align-items-center text-dark"
                 to="/plans"
               >
-                <img src="Show.png" alt="Plans Icon" className="me-2" />
+                <img src="Show.png" alt="Plans Icon" className="me-2 image" />
                 Plans
               </Link>
               <Link
                 className="nav-link d-flex align-items-center text-dark"
                 to="/cummunity"
               >
-                <img src="Team.png" alt="cummunity Icon" className="me-2" />
+                <img
+                  src="Team.png"
+                  alt="cummunity Icon"
+                  className="me-2 image"
+                />
                 cummunity
               </Link>
               <Link
                 className="nav-link d-flex align-items-center text-dark"
                 to="/messages"
               >
-                <img src="meeting.png" alt="Messages Icon" className="me-2" />
+                <img
+                  src="meeting.png"
+                  alt="Messages Icon"
+                  className="me-2 image"
+                />
                 Messages
               </Link>
             </nav>
@@ -71,7 +83,7 @@ const Schools = () => {
             <div className="d-flex justify-content-between align-items-center p-3 w-100">
               <h3>Schools</h3>
               <div className="input-group w-25">
-                <span className="input-group-text bg-white border-0">
+                <span className="input-group-text bg-white border-0 rounded-start-4">
                   <img
                     src="Search.png"
                     alt="Search Icon"
@@ -80,14 +92,14 @@ const Schools = () => {
                 </span>
                 <input
                   type="text"
-                  className="form-control border-0"
+                  className="form-control border-0 rounded-end-4 bg-white ps-2"
                   placeholder="Search here..."
                 />
               </div>
             </div>
             <div className="d-flex justify-content-between align-items-center">
               <div className="input-group w-25">
-                <span className="input-group-text bg-white border-0">
+                <span className="input-group-text bg-white border-0 rounded-start-4">
                   <img
                     src="Search.png"
                     alt="Search Icon"
@@ -96,7 +108,7 @@ const Schools = () => {
                 </span>
                 <input
                   type="text"
-                  className="form-control border-0"
+                  className="form-control border-0 rounded-end-4 bg-white ps-2"
                   placeholder="Search here..."
                 />
               </div>

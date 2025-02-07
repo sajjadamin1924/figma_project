@@ -27,7 +27,7 @@ const Classes = () => {
               <img
                 src="Speedometer.png"
                 alt="Dashboard Icon"
-                className="me-2"
+                className="me-2 image"
               />
               Dashboard
             </Link>
@@ -35,28 +35,28 @@ const Classes = () => {
               className="nav-link d-flex align-items-center text-dark"
               to="/schools"
             >
-              <img src="Vector (1).png" alt="Schools Icon" className="me-2" />
+              <img src="Vector (1).png" alt="Schools Icon" className="me-2 image" />
               Schools
             </Link>
             <Link
               className="nav-link d-flex align-items-center text-dark"
               to="/plans"
             >
-              <img src="Show.png" alt="Plans Icon" className="me-2" />
+              <img src="Show.png" alt="Plans Icon" className="me-2 image" />
               Plans
             </Link>
             <Link
               className="nav-link d-flex align-items-center text-dark"
               to="/cummunity"
             >
-              <img src="Team.png" alt="cummunity Icon" className="me-2" />
+              <img src="Team.png" alt="cummunity Icon" className="me-2 image" />
               cummunity
             </Link>
             <Link
               className="nav-link d-flex align-items-center text-dark"
               to="/messages"
             >
-              <img src="meeting.png" alt="Messages Icon" className="me-2" />
+              <img src="meeting.png" alt="Messages Icon" className="me-2 image" />
               Messages
             </Link>
           </nav>
